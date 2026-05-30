@@ -10,7 +10,7 @@ export default defineConfig({
       entry: "src/index.ts",
       name: "lego",
       formats: ["es", "umd"],
-      fileName: `(format)=>indexedDB.${format}.js`,
+      fileName: (format) => `indexedDB.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],
